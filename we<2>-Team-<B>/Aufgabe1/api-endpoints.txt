@@ -1,0 +1,53 @@
+unter  
+morgal.informatik.uni-ulm.de:8000/price/ gibts prices
+
+<prices>
+<description>Ulm feiert Tarif</description>
+<price>
+<name>Nachts</name>
+<start>00:00</start>
+<end>08:00</end>
+<cost>0,80</cost>
+</price>
+<price>
+<name>Morgens</name>
+<start>08:00</start>
+<end>12:00</end>
+<cost>0.90</cost>
+</price>
+<price>
+<name>Mittags</name>
+<start>12:00</start>
+<end>18:00</end>
+<cost>1.50</cost>
+</price>
+<price>
+<name>Abends</name>
+<start>18:00</start>
+<end>23:59</end>
+<cost>1.20</cost>
+</price>
+</prices>
+
+
+unter morgal.informatik.uni-ulm.de:8000/line/   findet man alle sub-URLs
+
+{
+  "description" : "Public transport line data endpoint",
+  "urls" : [
+    "data/",
+    "stop/",
+    "stop/$id",
+    "stop/$id/departure/"
+  ]
+}
+
+unter 
+morgal.informatik.uni-ulm.de:8000/line/data/ findet man Information von die ID und Fahrzeit jedes Bushaltstelle, und der List von Buashatstelle.
+
+unter morgal.informatik.uni-ulm.de:8000/line/stop/ findet man der List von Buashatstelle.
+
+unter morgal.informatik.uni-ulm.de:8000/line/stop/$id findet man für ein ID entsprenchend Haltstellesinformation(Name usw.)
+
+unter morgal.informatik.uni-ulm.de:8000/line/stop/$id/departure/ findet man Information von Abfahrt.
+
